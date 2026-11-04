@@ -142,8 +142,10 @@
     <ClCompile Include="Program1.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GameContext.h" />
     <ClInclude Include="I_State.h" />
     <ClInclude Include="StateHolder.h" />
+    <ClInclude Include="States.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
