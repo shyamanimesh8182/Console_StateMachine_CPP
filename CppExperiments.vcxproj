@@ -18,6 +18,19 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Headers\GameContext.h" />
+    <ClInclude Include="Headers\I_State.h" />
+    <ClInclude Include="Headers\StateHolder.h" />
+    <ClInclude Include="Headers\StateMachine.h" />
+    <ClInclude Include="Headers\States.h" />
+    <ClInclude Include="Headers\WorldInput.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Sources\Program1.cpp" />
+    <ClCompile Include="Sources\StateMachine.cpp" />
+    <ClCompile Include="Sources\WorldInput.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -111,6 +124,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)Headers</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -138,19 +152,6 @@
       <EnableSegmentHeap>true</EnableSegmentHeap>
     </Manifest>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Program1.cpp" />
-    <ClCompile Include="StateMachine.cpp" />
-    <ClCompile Include="WorldInput.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="GameContext.h" />
-    <ClInclude Include="I_State.h" />
-    <ClInclude Include="StateHolder.h" />
-    <ClInclude Include="StateMachine.h" />
-    <ClInclude Include="States.h" />
-    <ClInclude Include="WorldInput.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
