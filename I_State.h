@@ -1,7 +1,7 @@
 #pragma once
 #include "StateHolder.h"
 #include "GameContext.h"
-
+//an iterface which contains the methods which all the states are going to implement.
 class IState 
 {
 public:
