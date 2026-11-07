@@ -38,7 +38,7 @@ public:
 	}
 	void Exit() override
 	{
-		std::cout << "Exiting IDLE state." << std::endl;
+		//std::cout << "Exiting IDLE state." << std::endl;
 
 	}
 	StateID GetStateID() const override
@@ -86,7 +86,7 @@ public:
 	}
 	void Exit() override
 	{
-		std::cout << "Exiting FOLLOW state." << std::endl;
+		//std::cout << "Exiting FOLLOW state." << std::endl;
 
 	}
 	StateID GetStateID() const override
@@ -146,7 +146,7 @@ public:
 	}
 	void Exit() override
 	{
-		std::cout << "Exiting ATTACK state." << std::endl;
+		//std::cout << "Exiting ATTACK state." << std::endl;
 
 	}
 	StateID GetStateID() const override
